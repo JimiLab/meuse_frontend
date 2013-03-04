@@ -8,16 +8,21 @@
     <!-- Bootstrap -->
     <link href="bootstrap.css" rel="stylesheet" media="screen">
     <link href="bootstrap-responsive.css" rel="stylesheet">
+
   </head>
   <body>
   	<?php include ('menus.php'); ?>
 
-    <h1>Hello, world!</h1>
-    <p>
-        So, this is my home page (for now). It's intended to become something of a profile
-        page, but for the moment it is just going to be a place for me to put my notes for
-        various classes. If you go to IC, and you like study guides, enjoy!
-    </p>
+    <div class="row">
+        <div class = "span3">
+            <?php include ('notes_nav.php'); ?>
+        </div> 
+        <div class = "span8">
+            <p>
+                This is the main page for my notes. Enjoy!
+            </p>
+        </div>
+    </div>
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
 
