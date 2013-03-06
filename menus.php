@@ -11,10 +11,10 @@
             <a class="brand" href="#">Adeesha Ekanayake</a>
             <div class="nav-collapse collapse">
               <ul class="nav">
-                <li><a href="index.php">Home</a></li>
+                <li><a href="/">Home</a></li>
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="notes.php">My Notes</a></li>
+                <li><a href="/notes.php">My Notes</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
                   <ul class="dropdown-menu">

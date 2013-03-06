@@ -190,10 +190,57 @@
                             <ul>
                               <li>Prototype: Initial version to demonstrate concepts, design option, explore possible solutions to the problem</li>
                               <li>Useful for requirements engineering process and system design process</li>
-                              
+                              <li>Process model</li>
+                                    <ol>
+                                      <li>Establish Objectives</li>
+                                      <li>Define functionality</li>
+                                      <li>Develop prototype</li>
+                                      <li>Evaluate prototype</li>
+                                    </ol>
+                              <li><span class="label label-success">Good things</span></li>
+                                    <ul>
+                                      <li>test alternate designs</li>
+                                      <li>demonstrate feasibility to managers</li>
+                                    </ul>
+                              <li><span class="label label-warning">Bad things</span></li>
+                                    <ul>
+                                      <li>Prototype is used differently from product</li>
+                                      <li>Throwaway prototypes are dangerous</li>
+                                      
+                                    </ul>
                             </ul>
                       <li>Incremental delivery, what it is used for, process model, strengths and weaknesses</li>
+                            <ul>
+                              <li>Increments are developed then deployed in a production env</li>
+                              <li>Prioritized in order of importance to the customer</li>
+                              <li>Requirements for the first increment are defined</li>
+                              <li><span class="label label-success">Good things</span></li>
+                                    <ul>
+                                      <li>Customers can use experience of early increments to inform decisions and expectations of later incs</li>
+                                      <li>Customers get value from investment much sooner</li>
+                                      <li>Since important systems are implemented first, they get the most integration testing which means most
+                                        important components are most reliable</li>
+                                    </ul>
+                              <li><span class="label label-warning">bad things</span></li>
+                                    <ul>
+                                      <li>Interfaces and common facilities for the system are hard to define in advance</li>
+                                      <li>Hard to use when replacing a system because new system will be crippled</li>
+                                      <li>Doesn't work with customer contract expectations</li>
+                                    </ul>
+                            </ul>
                       <li>Boehm spiral, sectors, use, strengths and weaknesses</li>
+                            <ul>
+                              <li>Risk driven process: Combines change avoidance with change tolerance</li>
+                              <li>Sectors:</li>
+                                    <ul>
+                                      <li>Objective setting: Define objectives for a phase. Identify constraints</li>
+                                      <li>Risk assesement and reduction for each phase</li>
+                                      <li>Development and validation: define developmental model for the stage</li>
+                                      <li>Planning: decide whether to continue. If so, make more plans!</li>
+                                    </ul>
+                              <li><span class="label label-success">Good things</span>Risk-aware process: Fewer unexpected risks</li>
+                              <li><span class="label label-warning">Bad things</span>More detailed planning requires more attention, so less 'real' work is done</li>
+                            </ul>
                     </ul>
                   </div>
                 </div>
@@ -206,19 +253,14 @@
                 </div>
                 <div id="collapseThree" class="accordion-body collapse">
                   <div class="accordion-inner">
-                    Anim pariatur cliche...
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-group">
-                <div class="accordion-heading">
-                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
-                    Chapter 4
-                  </a>
-                </div>
-                <div id="collapseFour" class="accordion-body collapse">
-                  <div class="accordion-inner">
-                    Anim pariatur cliche...
+                    <ul>
+                      <li>Describe Agile Software development</li>
+                      <li>Plan driven agile, draw figure 3.2, strengths and weaknesses</li>
+                      <li>Extreme programming, 3.3, Extreme programming practices, 3.4, strengths, weaknesses</li>
+                      <li>Pair programming, strengths and weaknesses</li>
+                      <li>How agile project management is done, what scrum is, strengths and weaknesses, 3.8</li>
+                      <li>No 3.5</li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -228,6 +270,8 @@
     </div>
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="js/menus.js"></script>
+
 
     <!-- Le javascript
     ================================================== -->
