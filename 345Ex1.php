@@ -6,8 +6,8 @@
 
     <div class="container">
     <!-- Bootstrap -->
-    <link href="bootstrap.css" rel="stylesheet" media="screen">
-    <link href="bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
   </head>
   <body>
   	<?php include ('menus.php'); ?>

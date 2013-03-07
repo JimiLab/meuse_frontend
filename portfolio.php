@@ -1,31 +1,42 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Adeesha's home page</title>
+<head>
+    <title>My Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <div class="container">
-    <!-- Bootstrap -->
+        <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
 
-  </head>
-  <body>
-  	<?php include ('menus.php'); ?>
+    </head>
+    <body>
+     <?php include ('menus.php'); ?>
 
-    <div class="row">
-        <div class = "span3">
-            <?php include ('notes_nav.php'); ?>
-        </div> 
-        <div class = "span8">
-            <p>
-                This is the main page for my notes. Enjoy!
-            </p>
+     <div class="row">
+        <p>Here is my portfolio!</p>
+
+        <div id="myCarousel" class="carousel slide">
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <!-- Carousel items -->
+        <div class="carousel-inner">
+            <div class="active item">…</div>
+            <div class="item">…</div>
+            <div class="item">…</div>
         </div>
+        <!-- Carousel nav -->
+        <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+        <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
     </div>
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/menus.js"></script>
+
+</div>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/menus.js"></script>
 
 
     <!-- Le javascript
@@ -45,5 +56,5 @@
     <script src="js/bootstrap-carousel.js"></script>
     <script src="js/bootstrap-typeahead.js"></script>
 
-  </body>
+</body>
 </html>

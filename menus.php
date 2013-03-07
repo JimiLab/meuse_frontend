@@ -12,20 +12,9 @@
             <div class="nav-collapse collapse">
               <ul class="nav">
                 <li><a href="/">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="/notes.php">My Notes</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">My Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li class="divider"></li>
-                    <li class="nav-header">Nav header</li>
-                    <li><a href="#">Separated link</a></li>
-                    <li><a href="#">One more separated link</a></li>
-                  </ul>
+                <li><a href="/portfolio.php">Portfolio</a></li>
+                <li><a data-toggle="modal" href="#contactModal" >Contact</a></li>
+                <li><a href="/notes.php">Notes</a></li>
                 </li>
               </ul>
             </div><!--/.nav-collapse -->
@@ -33,4 +22,19 @@
         </div>
       </div>
 
+<!-- Modal -->
+<div id="contactModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <!--
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    !-->
+    <h3 id="myModalLabel">Contact</h3>
+  </div>
+  <div class="modal-body">
+    <p>email: adeesha@adeeshaek.com</p>
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+  </div>
+</div>
 
