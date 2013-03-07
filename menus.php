@@ -1,6 +1,6 @@
 
 <!-- Static navbar -->
-      <div class="navbar">
+      <div class="navbar navbar-inverse">
         <div class="navbar-inner">
           <div class="container">
             <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -31,7 +31,7 @@
     <h3 id="myModalLabel">Contact</h3>
   </div>
   <div class="modal-body">
-    <p>email: adeesha@adeeshaek.com</p>
+    <p><i class="icon-envelope"></i> adeesha@adeeshaek.com</p>
   </div>
   <div class="modal-footer">
     <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>

@@ -17,6 +17,7 @@
         So, this is my home page (for now). It's intended to become something of a profile
         page, but for the moment it is just going to be a place for me to put my notes for
         various classes. If you go to IC, and you like study guides, enjoy!
+
     </p>
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
