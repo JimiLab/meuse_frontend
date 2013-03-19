@@ -255,10 +255,99 @@
                   <div class="accordion-inner">
                     <ul>
                       <li>Describe Agile Software development</li>
+                            <ul>
+                              <li>Incremental approach to specification, development and delivery</li>
+                              <li>Good for when requirements change quickly</li>
+                              <li>Quickly deliver software to customers</li>
+                              <li>less bureaucracy</li>
+                            </ul>
                       <li>Plan driven agile, draw figure 3.2, strengths and weaknesses</li>
+                            <ul>
+                              <li><img src="images/Figure_3_2.png" alt="Figure 3.2"></li>
+                              <li>
+                                <div class="row">
+                                  <div class="span3"> Plan Driven       
+                                    <ul>
+                                          <li>Separate stages with outputs for each stage</li>
+                                          <li>Formal documents to communicate progress after iteration</li>
+                                          <li>Design, then implementation</li>
+                                          
+                                        </ul></div>
+                                  <div class="span3"> Agile         
+                                    <ul>
+                                          <li>Design and implementation are central</li>
+                                          <li>Simultaneous design and implementation</li>
+                                          
+                                        </ul></div>
+                                </div>
+                              </li>
+                              <li>Plan driven agile can have a documentation spike</li>
+                              
+                            </ul>
                       <li>Extreme programming, 3.3, Extreme programming practices, 3.4, strengths, weaknesses</li>
+                            <ul>
+                              <li><img src="images\Extreme.png" alt="Extreme programming diagram"></li>
+                              <li>Properties:</li>
+                              <ul>
+                                <li>Pushing good practice to extreme levels</li>  
+                                <li>Requirements are scenarios (user stories)</li>
+                                <li>Pair programming, TDD</li>
+                                <li>Quick successive releases of system</li>
+                                <li>Continuous customer engagement</li>
+                                <li>Story cards</li>
+                              </ul>
+                              <li><img src="images\Extreme_2.png" alt="Extreme programming diagram"></li>
+                            </ul>
+                            <li><span class="label label-success">Good things</span>      <ul>
+                                    <li>Good practices</li>
+                                    <li>High productivity</li>
+                                    <li>Lots of testing</li>
+                                  </ul></li>
+                            <li><span class="label label-warning">Bad things</span>      <ul>
+                                    <li>Incremental changes degrade system structure</li>
+                                    <li>Refactoring is hard</li> 
+                                  </ul></li>
                       <li>Pair programming, strengths and weaknesses</li>
+                            <ul>
+                              <li>Dynamic pairs, so that everyone works with everyone</li>
+                              <li></li>
+                              <li><span class="label label-success">Good things</span>
+                                      <ul>
+                                        <li>Collective ownership of system</li>
+                                        <li>Informal review process</li>
+                                        <li>Supports refactoring</li>
+                                        <li>Good for younger programmers</li>
+                                        <li>Sharing of knowledge is greater</li>
+                                      </ul>
+                              </li>
+                              <li><span class="label label-warning">Bad things</span>
+                                      <ul>
+                                        <li>Bad for experienced programmers</li>
+                                      </ul>
+                              </li>
+                            </ul>
                       <li>How agile project management is done, what scrum is, strengths and weaknesses, 3.8</li>
+                            <ul>
+                              <li>make sure software is delivered on time and within budget</li>
+                              <li>Scrum Approach
+                                <ul>
+                                  <li>Phases:       <ul>
+                                          <li>Outline: General objectives, design architecture</li>
+                                          <li>Sprint cycles: Develop increment of system</li>
+                                          <li>Project Closure: wrap up project, documentation</li>
+                                        </ul></li>
+                                  <li>Sprint cycles
+                                          <ul>
+                                            <li>Innovative. Work done assessed, features selected, software implemented.</li>
+                                            <li>Software delivered at end of sprint</li> 
+                                            <li>2-4weeks long</li>
+                                            <li>No project manager - instead scrum master</li>
+                                          </ul></li>
+                                  <li><img src="images\Scrum.png" alt="Extreme programming diagram"></li>
+                                </ul>
+                              </li>
+                              
+                            </ul>
                       <li>No 3.5</li>
                     </ul>
                   </div>
