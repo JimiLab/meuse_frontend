@@ -205,6 +205,7 @@
                           </ul>
                         </ul>
                         <li>Prototyping, what its used for, the process model, strengths and weaknesses</li>
+                        <li><img src="images/Prototyping.png" alt="Prototyping process"></li>
                         <ul>
                           <li>Prototype: Initial version to demonstrate concepts, design option, explore possible solutions to the problem</li>
                           <li>Useful for requirements engineering process and system design process</li>
@@ -229,6 +230,7 @@
                         </ul>
                         <li>Incremental delivery, what it is used for, process model, strengths and weaknesses</li>
                         <ul>
+                          <li><img src="images/Incremental_delivery.png" alt="Incremental delivery"></li>
                           <li>Increments are developed then deployed in a production env</li>
                           <li>Prioritized in order of importance to the customer</li>
                           <li>Requirements for the first increment are defined</li>
@@ -248,6 +250,7 @@
                           </ul>
                           <li>Boehm spiral, sectors, use, strengths and weaknesses</li>
                           <ul>
+                            <li><img src="images\Boehm_spiral.png" alt="Diagram of Boehm Spiral"></li>
                             <li>Risk driven process: Combines change avoidance with change tolerance</li>
                             <li>Sectors:</li>
                             <ul>
