@@ -75,6 +75,7 @@
                       <li>Software process models - descibe them, similarities and differences</li>
                       <ul>
                         <li>waterfall incremental dev: Each process activity is a separate phase</li>
+                        <li><img src="images/Waterfall.png" alt="Waterfall model"></li>
                         <ul>
                           <li>Plan-driven: plan all the acts before you do them</li>
                           <li>Each phase is a document to sign off</li>
@@ -86,6 +87,7 @@
                         </ul>
                         <li>reuse-oriented: Make a lot of reusable components. 
                           Focus on integrating them, not develop them all</li>
+                          <li><img src="images/Reuse_oriented.png" alt="Reuse oriented software development"></li>
                           <ul>
                             <li>new stages</li>
                             <ul>
@@ -114,6 +116,7 @@
                           <li>Evolution: Changing customer needs</li>
                         </ul>
                         <li>Know acts involved in spec and be able to describe them</li>
+                        <li><img src="images/Requirements_eng" alt="Requirements engineering image"></li>
                         <ul>
                           <li>Feasibility study</li>
                           <ul>
@@ -138,6 +141,7 @@
                           </ul>
                         </ul>
                         <li>Know acts involved in design and implementation</li>
+                        <li><img src="images/Design_process.png" alt="Design process images"></li>
                         <ul>
                           <li>architectural Design</li>
                           <ul>
@@ -163,6 +167,7 @@
                           </ul>
                         </ul>
                         <li>Know acts involved in software validation and describe them</li>
+                        <li><img src="images/Testing_stages.png" alt="Testing stages"></li>
                         <ul>
                           <li>dev testing</li>
                           <ul>
@@ -180,6 +185,7 @@
                             <li>Final phase. Tested with customer data</li>
                             <li>Double check with user reqs</li>
                           </ul>
+                          <li>This is what testing in a plan-driven env looks like: <img src="images/Plan_driven_testing.png" alt="Plan driven testing"></li>
                         </ul>
                         <li>Know what software evolution involves:</li>
                         <ul>
