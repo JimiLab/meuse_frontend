@@ -77,9 +77,83 @@
                   <div id="collapseFour" class="accordion-body collapse">
                     <div class="accordion-inner">
                             <ul>
-                              <li>Section 4.1</li>
-                              <li>Section 4.2</li>
+                              <li>Section 4.1, 4.2</li>
+                                    <ul>
+                                      <li>How to define a tree:</li>
+                                            <ul>
+                                              <li>Recursively: A tree has a root and two children, which are also trees</li>
+                                            </ul>
+                                      <li>Properties of a tree</li>
+                                            <ul>
+                                              <li>If it has N nodes</li>
+                                              <li>It has N-1 edges: Each edge connects a node to parent, but root has no edge connecting it to a parent</li>
+                                                    <ul>
+                                                      <li>leaves: no children</li>
+                                                      <li>siblings: same parent</li>
+                                                      <li>path: sequence of edges. Exactly one path from in a tree.</li>                                                        
+                                                      <li>depth: path from root to node</li>
+                                                      <li>height: longest path from node to root</li>
+                                                    </ul>
+                                            </ul>
+                                    </ul>
+                                    <li>directory trees</li>
+                                          <ul>
+                                            <li>Preorder traversal: directory first</li>
+                                            <li>Postorder traversal: files first - used for estimating size of directories</li>
+                                          </ul>
+                                    <li>Expression trees </li>
+                                          <ul>
+                                            <li>used to represent calculations</li>
+                                            <li>preorder: prefix notation in calculators, programming</li>
+                                            <li>inorder: how humans solve it</li>
+                                            <li>post-order: post-fix notations</li>
+                                          </ul>
                               <li>Section 4.3</li>
+                                    <ul>
+                                      <li>Binary Search tree</li>
+                                            <ul>
+                                              <li>for node x, items in left subtree are less, right sub are greater</li>
+                                              <li>interface type: implements comparable</li>
+                                            </ul>
+                                      <li></li>
+                                      <li>AVL Tree</li>
+                                            <ul>
+                                              <li>Balance Condition:</li>
+                                              <ul>
+                                                <li>Empty subtree has height -1</li>
+                                                <li>Left and right subtrees can differ by 1</li>
+                                                <li>4 forms of insertion</li>
+                                                      <ul>
+                                                        <li>right subchild of right child - 1</li>
+                                                        <li>left subchild of right child - 2</li>
+                                                        <li>right subchild of left child - 3</li>
+                                                        <li>left subchild of left child - 4</li>
+                                                      </ul>
+                                                <li>Solving insertions</li>
+                                                      <ul>    
+                                                        <li>First form - 1 and 4 - are mirrors.</li>
+                                                              <ul>
+                                                                <li>Solved by one rotation</li>
+                                                                <li></li>
+                                                                
+                                                              </ul>
+                                                        <li>Second form - 2 and 3 are mirrors</li> 
+                                                              <ul>
+                                                                <li>Double rotation</li>
+                                                                <li></li>
+                                                              </ul>
+                                                      </ul>
+                                              </ul>
+                                              <li></li>
+                                            </ul>
+                                      <li>Splay Tree</li>
+                                            <ul>
+                                              <li>Any M consecutive ops take at most O(MlogN) time.</li>
+                                              <li>Since a sequence of M ops has a total worst case time of O(Mf(N)) the amortized running time is  O(f(N))</li>
+                                              <li>Whenever a node is accessed it must be moved: Moved to the root by AVL rotations</li>
+                                              
+                                            </ul>
+                                    </ul>
                               <li>Section 4.4</li>
                               <li>Section 4.5</li>
                             </ul>
