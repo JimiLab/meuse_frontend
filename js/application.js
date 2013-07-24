@@ -2,6 +2,7 @@ var global = {};
 var lastFM = {};
 var SHOUTcast = {};
 var mySound = undefined;
+var lastURL = "none";
 
 $(document).ready(function () {
 	show();
@@ -42,18 +43,26 @@ function loadSM2()
 
 function playSound(targetUrl)
 {
+
 	//checks if sound is already playing
 	if(!jQuery.isEmptyObject(mySound))
 	{
 		mySound.destruct();
 	}
 
-	mySound = soundManager.createSound({
-      id: 'aSound',
-      url: targetUrl,
-      type: 'audio/mp3'
-    });
-    mySound.play();
+	//if the last url is equal to the current url 
+	//then stop playing
+	if (targetUrl.localeCompare(lastURL) != 0)
+	{
+		mySound = soundManager.createSound({
+	      id: 'aSound',
+	      url: targetUrl,
+	      type: 'audio/mp3'
+	    });
+	    mySound.play();
+
+		lastURL = targetUrl;
+	}
 }
 
 function show() {
