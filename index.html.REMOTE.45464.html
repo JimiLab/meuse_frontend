@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MeUse</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/jquery-ui-1.9.1.min.css">
+        <link rel="stylesheet" href="css/grid.css">
+        <link href='http://fonts.googleapis.com/css?family=Fjalla+One'>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/jquery-1.8.1.min.js"></script>
+        <script src="js/jquery-ui-1.9.1.min.js"></script>
+        <script src="js/jquery.awesomeCloud-0.2.min.js"></script>
+        <script src="js/application.js"></script>
+    </head>
+    <body class="search-layout">
+        <h1 id="banner">MeUse</h1>
+
+        <div id="rays">
+        </div>
+
+        <form id="search">
+            <div class="wrapper">
+                <input  id="query" type="text" name="q" placeholder="Search for an artist..." autofocus/>
+                <button type="submit" class="search_btn">
+                    <img src="images/search_icon.png" title="Search"/>
+                </button>
+            </div>
+        </form>
+        
+        <div id="loading-panel" class="panel">
+            <div id="loader">
+                <span id="loader_1"></span>
+                <span id="loader_2"></span>
+                <span id="loader_3"></span>
+            </div>
+        </div>
+
+        <div id="artist-panel" class="panel">
+            <div id="info-panel" class="inner-panel left-panel">
+                <div id="artist-pic" class="cover-image">
+                    <div id="artist-header">Alicia Keys</div>
+                </div>
+                <div id="artist-summary">
+                </div>
+            </div>
+            <div id="result-panel" class="inner-panel focus-panel">
+                <div id="result-list">
+                    <div class="result">
+                        <a href="" class="station">No Results!</a>
+                        <h3 class="song"></h3>
+                           <h4 class="simartists"></h4>
+                           <h5 class="tags"></h5>
+                           <h6 class="metadata"></h6>
+                    </div>
+                    <div class="result">
+                        <a href="" class="station"></a>
+                        <h3 class="song"></h3>
+                           <h4 class="simartists"></h4>
+                           <h5 class="tags"></h5>
+                           <h6 class="metadata"></h6>
+                    </div>
+                    <div class="result">
+                        <a href="" class="station"></a>
+                        <h3 class="song"></h3>
+			   <h4 class="simartists"></h4>
+			   <h5 class="tags"></h5>
+			   <h6 class="metadata"></h6>
+                    </div>
+                </div>
+            </div>
+            <div id="other-panel" class="inner-panel right-panel">
+                <div id="similar-container">
+                    <div class="similar-image">
+                        <div class="similar-name"></div>
+                    </div>
+                    <div class="similar-image">
+                        <div class="similar-name"></div>
+                    </div>
+                    <div class="similar-image">
+                        <div class="similar-name"></div>
+                    </div>
+                    <div class="similar-image">
+                        <div class="similar-name"></div>
+                    </div>
+                </div>
+                <div id="tag-cloud">
+                    <span data-weight="100">soul</span>
+                    <span data-weight="83">rnb</span>
+                    <span data-weight="66">female vocalists</span>
+                    <span data-weight="43">pop</span>
+                    <span data-weight="33">singer-songwriter</span>
+                    <span data-weight="12">Alicia Keys</span>
+                    <span data-weight="8">piano</span>
+                </div>
+            </div>
+        </div>
+		<embed style="position:relative; height:33px; top:600px; left:540px;" background="#777777" hidden="yes" type="application/x-vlc-plugin" name="player" id="player" autoplay="yes" loop="no" target="">
+        <!--<footer>
+                 Created by: <a href="http://jimi.ithaca.edu/~mgrant1/Resume" target="_blank">Maurice Grant</a> and <a href="http://jimi.ithaca.edu/~dturnbull" target="_blank">Doug Turnbull</a>
+-->        </footer>
+    </body>
+</html>
