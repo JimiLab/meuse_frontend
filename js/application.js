@@ -343,6 +343,7 @@ function bringForward(jqObj) {
 function playStation() {
 	$(".station").on("click", function (event) {
 		var p_href = $(this).attr('href');
+		console.log(p_href)
 		$('#player').replaceWith('<embed style="position:relative; height:33px; top:600px; left:540px;" hidden="yes" type="application/x-vlc-plugin" name="player" id="player" autoplay="yes" loop="no" target="' + p_href + '">');
 		$(".station:gt(-1)").removeClass("play");
 		$(this).addClass("play");
