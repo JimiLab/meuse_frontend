@@ -1,32 +1,60 @@
 var global = {};
 var lastFM = {};
 var SHOUTcast = {};
+var mySound = undefined;
 
 $(document).ready(function () {
 	show();
 	initGlobals();
 	initHandlers();
 	initAutocomplete();
-	if (navigator.appVersion.indexOf("Win")!=-1)
-	    playStation();
+	//if (navigator.appVersion.indexOf("Win")!=-1)
+	playStation();
 
-	soundManager.setup({
+	//loadSM2('http://199.217.115.31:9780/;');
+	//loadSM2('http://96.31.92.46:8063/;');
+	loadSM2();
+	playSound('http://199.217.115.31:9780/;');
+});
+
+function loadSM2()
+{
+		soundManager.setup({
 	  url: '/soundmanagerswfs/',
+	  preferFlash: true,
 	  // optional: use 100% HTML5 mode where available
 	  // preferFlash: false,
+	  /*
 	  onready: function() {
 	    var mySound = soundManager.createSound({
 	      id: 'aSound',
-	      url: 'http://yp.shoutcast.com/sbin/tunein-station.pls?id=229258'
+	      url: targetUrl,
+	      type: 'audio/mp3'
 	    });
 	    mySound.play();
 	  },
+	  */
 	  ontimeout: function() {
 	    // Hrmm, SM2 could not start. Missing SWF? Flash blocked? Show an error, etc.?
 	  }
 	});
+}
 
-});
+function playSound(targetUrl)
+{
+	//checks if sound is already playing
+	if(!jQuery.isEmptyObject(mySound))
+	{
+		mySound.destruct();
+	}
+
+	mySound = soundManager.createSound({
+      id: 'aSound',
+      url: targetUrl,
+      type: 'audio/mp3'
+    });
+    mySound.play();
+}
 
 function show() {
 	$('body').show();
@@ -358,14 +386,47 @@ function bringForward(jqObj) {
 	$('#banner').css("left", "96%");
 }
 
+function requestPlaylist(p_href)
+{
+	var request = $.ajax({
+	  url: p_href,
+	  type: "GET",
+	});
+
+	request.done(function(msg) {
+	  console.log( msg );
+
+	 	//retrieve the bit from file1 to Title1
+	 	var start=msg.search("File1=");
+	 	var substring1=msg.substring(start);
+	 	var substring2=substring1.substring(6);
+	 	var end=substring2.search("Title");
+	 	var substring3=substring2.substring(0,(end-1));
+
+	 	//add the /; string after the address so that SM2 knows it is a stream
+	 	substring3=substring3+("/;");
+	 	console.log(substring3);
+
+	 	//try to play the ugly snippet
+	 	//loadSM2(substring3);
+	 	playSound(substring3);
+	});
+}
+
+//modified to play the station using soundmanager 2
 function playStation() {
 	$(".station").on("click", function (event) {
 		var p_href = $(this).attr('href');
-		console.log(p_href)
 		$('#player').replaceWith('<embed style="position:relative; height:33px; top:600px; left:540px;" hidden="yes" type="application/x-vlc-plugin" name="player" id="player" autoplay="yes" loop="no" target="' + p_href + '">');
 		$(".station:gt(-1)").removeClass("play");
 		$(this).addClass("play");
 		console.log("color changed");
+		console.log(p_href);
+
+		//make ajax request to request that the url from the pls
+		//is played using SM2
+		requestPlaylist(p_href);
+
 		event.preventDefault();
 	});
 }
