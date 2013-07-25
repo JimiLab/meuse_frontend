@@ -21,8 +21,8 @@ $(document).ready(function () {
 function loadSM2()
 {
 		soundManager.setup({
-	  url: '/soundmanagerswfs/',
-	  preferFlash: true,
+	  url: 'http://jimi.ithaca.edu/~meuse/Meuse/soundmanagerswfs/',
+	  preferFlash: false,
 	  // optional: use 100% HTML5 mode where available
 	  // preferFlash: false,
 	  /*
@@ -433,7 +433,10 @@ function playStation() {
 		console.log(p_href);
 
 		//make ajax request to request that the url from the pls
-		//is played using SM2
+		//is played using SM/2
+		//the url is routed through the middleman url
+		//to prevent cross origin issues
+		p_href = 'http://jimi.ithaca.edu/~meuse/Meuse/middleman.php?url=' + p_href
 		requestPlaylist(p_href);
 
 		event.preventDefault();
